@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisration-form</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\register.css">
+</head>
+<body>
+    <h3>REGISTRATION FORM</h3>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Register here</p>
+                        <form action="../guvi_project/php/register.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name <span class="text-danger">*</span></label>
+                                <input type="text" 
+                                        class="form-control"
+                                        placeholder="enter your name"
+                                        name="name"
+                                        id="name"
+                                        required/>
+                            </div>
+                            <div class="form-group mt-1">
+                                <label for="age">Enter your Age <span class="text-danger">*</span></label>
+                                        <input type="number"
+                                            class="form-control mt-1"
+                                            placeholder="enter your age"
+                                            id="age"
+                                            name="age"
+                                            required/>
+                            </div>
+                            <div class="form-group mt-1">
+                                <label for="email">Enter your mail <span class="text-danger">*</span></label>
+                                    <input type="email"
+                                        class="form-control mt-1"
+                                        placeholder="enter your mail"
+                                        id="email"
+                                        name="email"
+                                        required/>
+                            </div>
+                                <div class="form-group mt-1">
+                                    <label for="number">Contact <span class="text-danger">*</span></label>
+                                    <input type="number"
+                                            class="form-control mt-1"
+                                            placeholder="enter your contact number"
+                                            id="number"
+                                            name="number"
+                                            required/>
+                                </div>
+                                <div class="form-group mt-1">
+                                    <label for="password">Enter your Password <span class="text-danger">*</span></label>
+                                    <input type="password"
+                                        class="form-control mt-1"
+                                        placeholder="enter your password"
+                                        id="password"
+                                        name="password"
+                                        required/>
+                                </div>
+                                <div class="from-group mt-3 text-center">
+                                    <button class="btn btn-secondary" type="reset">
+                                        reset
+                                    </button>
+                                    <button class="btn btn-success" type="submit"name="submit">
+                                        submit
+                                    </button>
+                                </div>
+                                <small class="text-center">Already having an account <a href="/login.html">login here</a></small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
